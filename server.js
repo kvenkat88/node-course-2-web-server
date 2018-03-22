@@ -51,6 +51,12 @@ app.get('/about',(req,res)=>{
     });
 });
 
+app.get('/projects',(req,res)=>{
+  res.render('home.hbs',{
+    pageTitle : 'Projects Page'
+  })
+});
+
 app.get('/bad',(req,res)=>{
   res.send({errorMessage : "Not able to fullfill this request at this time"});
 });
